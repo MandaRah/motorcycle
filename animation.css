@@ -1,0 +1,129 @@
+@keyframes slade-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.fade-left {
+    animation: slade-in-left 1s ease-in;
+}
+
+@keyframes slade-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-right {
+    animation: slade-in-right 1s ease-in;
+}
+
+/* zoom-in */
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom {
+    animation: zoom-in 1s ease-in;
+}
+
+
+
+/* background zoom */
+@keyframes zoom-background {
+
+    0% {
+        background-size: 110%;
+    }
+
+    50% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 110%;
+    }
+
+}
+
+
+/* rotation */
+
+@keyframes rotate-icone {
+    0% {
+        transform: rotateX('0deg');
+        opacity: 0;
+    }
+
+    50% {}
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+
+}
+
+
+/* anime text */
+
+@keyframes animetext {
+    0% {
+        opacity: 0;
+    }
+
+    /* 15% {
+        filter: none;
+    }
+
+    50% {
+        color: transparent;
+    } */
+
+    100%{
+        opacity: 1;
+    }
+
+
+}
+
+
+
+i:hover {
+    animation: rotate-icone 1s 1;
+}
+
+
+h2:hover {
+    color: white;
+    animation: ;
+}
+
+
+h2 span:hover {
+    color: black;
+}
